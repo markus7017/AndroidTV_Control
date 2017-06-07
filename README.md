@@ -29,39 +29,5 @@ Markus
 
 
 Usage: tv_control.sh <command> [<device id>[log | trace | debug]]
-
-Valid commands:
-	status:  return device status - ON/OFF
-	on:      switch device ON
-	off:     switch device OFF
-	sleep:   switch device to sleep mode (you have to check if sleep or soft_sleep works with your device)
-	suspend: switch device to soft-sleep mode (you have to check if sleep or soft_sleep works with your device)
-	resume:  (try to) wakeup device (doesn't work if device is powered off)
-	ping:    keep network interface device online - prevent power down while sleeping
-	avr:     speical: switch to HDMI1 on Philips TV to select AVR
-
-	netflix: Open the NetFlix App
-	tvguide: Open the TV Guide App
-	videotext: Open the Videotext App
-
-	see script code for key commands (simulate remote keys)
-
-Device IDs:"
-	1: TV@$tv_ip:$port
-	2: Fire-TV@$fire_tv_ip:$port
-Default IP=$tv_ip; Default Port=$port (see script)
-
-Debugging":
-log      Enable logging to stdout
-trace    Enable ADB trace (output will be redirected to logfile)
-debug    Enable ADB debugging (output will be redirected to logfile)
-
-Examples:
-sudo ./tv_control.sh on (uses default IP $tv_ip - see script)
-sudo ./tv_control.sh home (send HOME key to device)
-sudo ./tv_control.sh sleep 192.168.1.1
-
-Note:
-Logfile: $log
-The scripts writes log messages to $log - change $$log in script if you don't have privileges there
+Run without parameters or --help to get iformation on the usage.
 
