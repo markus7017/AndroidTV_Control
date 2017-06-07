@@ -27,7 +27,6 @@ https://community.openhab.org/t/philips-android-tv/15267/25
 HappySmartHoming & have fun,
 Markus
 
-
 Usage: tv_control.sh <command> [<device id>[log | trace | debug]]
 Run without parameters or --help to get iformation on the usage.
 
