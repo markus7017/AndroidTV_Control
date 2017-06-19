@@ -302,7 +302,7 @@ fi
 	"power")      sendkey 26;;		# Power Button
 	"sleep")      sendkey 223;;		# Sleep Button
 	"suspend")    sendkey 276;;		# Soft Sleep Button
-	"resume")     asendkey 224;;	# Wakeup Button	
+	"resume")     sendkey 224;;		# Wakeup Button	
 	"pairing")    sendkey 225;;		# Pairing Button
 	"settings")   sendkey 176;;		# Settings Button
 	"presskey")   presskey $tv_key;;
