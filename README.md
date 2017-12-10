@@ -11,6 +11,8 @@ tv_mac="xx:xx:xx:xx:xx:xx"  # MAC address of the TV (required to wake-on-lan"
 fire_tv_ip="192.168.xx.xx"  # IP address of the Fire TV (device id 2)
 The MAC address can be obtained from the TVs network settins/status
 
+You could enable using cec-client (requires package cec-utils) to power TV using HDMI and also selecting the HDMI channel for the AVR (in this case you need also to set the hdmi_addr_avr var, see script comment).
+
 NETFIX, TV Guide and Videotext are implemented by starting the appropirate App using ADB (thanks Paul for providing the information).
 
 Depending on the TV model you may need to adjust the way the TV is powered on and off. My requires a sleep and not pressing the power button. This ensures that the TV is switched on when its OFF and switches off when its ON. Using the power button as a toggle will fail once you used the remote to do it manually and openHAB doesn't get informed on that.
@@ -27,6 +29,6 @@ https://community.openhab.org/t/philips-android-tv/15267/25
 HappySmartHoming & have fun,
 Markus
 
-Usage: tv_control.sh <command> [<device id>[log | trace | debug]]
-Run without parameters or --help to get iformation on the usage.
+Usage: androidtv_control.sh <command> [<device id>[log | trace | debug]]
+Run without parameters or --help to get iformation on the usage, check the script for more command line options.
 
